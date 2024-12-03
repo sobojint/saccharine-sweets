@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+header, h1, h2 {
+    font-family: "Lora", serif;
+    font-weight: 700;
+}
+
+h3, h4 {
+    font-family: "Lora", serif;
+    font-weight: 600;
+}
+
+h5, h6 {
+    font-family: "Lora", serif;
+    font-weight: 400;
+}
+
+.r-italic {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+}
+
+.r-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}

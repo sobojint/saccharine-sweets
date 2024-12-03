@@ -1,0 +1,44 @@
+body {
+    background-color: #e3e3e3;
+    margin: 0;
+    padding: 0;
+}
+
+/********************************
+**     Header/Navbar Styles    **
+********************************/
+
+header {
+    background-color: #455d7a;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav img {
+    width: 300px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin-top: 20px;
+    margin-left: 40px;
+    gap: 40px;
+}
+
+nav a:hover {
+    color: #65ddf2;
+}
