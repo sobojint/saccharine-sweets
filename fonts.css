@@ -18,12 +18,49 @@ h5, h6 {
     font-weight: 400;
 }
 
-.r-italic {
+.ff-l-bold {
+    font-family: "Lora", serif;
+    font-weight: 700;
+}
+
+.ff-r-italic {
     font-family: "Roboto", sans-serif;
     font-style: italic;
 }
 
-.r-bold {
+.ff-r-bold {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+}
+
+.f-size-12 {
+    font-size: 12px;
+}
+
+.f-size-14 {
+    font-size: 14px;
+}
+
+.f-size-16 {
+    font-size: 16px;
+}
+
+.f-size-18 {
+    font-size: 18px;
+}
+
+.f-size-20 {
+    font-size: 20px;
+}
+
+.f-size-22 {
+    font-size: 22px;
+}
+
+.f-size-24 {
+    font-size: 24px;
+}
+
+.f-size-26 {
+    font-size: 26px;
 }
