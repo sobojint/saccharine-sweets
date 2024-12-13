@@ -28,7 +28,7 @@ h5, h6 {
     font-style: italic;
 }
 
-.ff-r-bold {
+.ff-r-bold, .gallery-card {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
 }
@@ -63,4 +63,16 @@ h5, h6 {
 
 .f-size-26 {
     font-size: 26px;
+}
+
+.f-size-28 {
+    font-size: 28px;
+}
+
+.f-size-30 {
+    font-size: 30px;
+}
+
+.f-size-32 {
+    font-size: 32px;
 }
