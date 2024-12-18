@@ -44,6 +44,10 @@ nav a:hover {
     color: #65ddf2;
 }
 
+#navbar-links {
+    display: none;
+}
+
 /********************************
 **        Footer Styles        **
 ********************************/
@@ -371,6 +375,102 @@ h2 {
     grid-template-columns: 1fr;
 }
 
+/***************************
+**  Mobile Header Section **
+****************************/
+.m-navbar {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.m-navbar > a {
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #000;
+    background-color: #4c7ab1;
+    width: 40px;
+    height: 40px;
+    padding: 15px;
+}
+
+.m-navbar > a:hover {
+    cursor: pointer;
+    background-color: #3f7fce;
+}
+
+.m-navbar > a > img {
+    width: 40px;
+    height: 40px;
+}
+
+.m-link {
+    color: #e3e3e3;
+    text-decoration: none;
+}
+
+.m-link:hover {
+    color: #e3e3e3;
+    text-decoration: underline;
+}
+
+/***************************
+**   Mobile Main Styles   **
+****************************/
+.m-close-btn {
+    border: none;
+    background: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.m-close-btn:hover {
+    background: none;
+}
+
+.m-close-btn > img {
+    width: 50px;
+}
+
+.m-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start offscreen */
+    width: 100vw;
+    height: 100vh;
+    background-color: #455d7a;
+    color: white;
+    overflow-x: hidden;
+    transition: right 0.5s ease; /* Sliding effect */
+    z-index: 1000;
+}
+  
+/* When the overlay is shown */
+.m-overlay.active {
+    right: 0; /* Slide in from the right */
+}
+
+.m-overlay-content {
+    position: relative;
+    color: #000;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 40px 0;
+    gap: 40px;
+}
+
+.m-overlay-content img {
+    width: 100%;
+    max-width: 350px;
+}
+
 @media (min-width: 500px) {
     h2 {
         text-align: left;
@@ -407,6 +507,14 @@ h2 {
 }
 
 @media (min-width: 800px) {
+    #navbar-links {
+        display: flex;
+    }
+
+    .m-navbar {
+        display: none;
+    }
+
     .menu-card {
         flex-flow: row nowrap;
         width: 700px;

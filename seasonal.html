@@ -10,12 +10,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="scripts.js"></script>
 </head>
 <body>
+    <div class="m-navbar">
+        <a onclick="toggleOverlay()">
+            <img src="images/more.png" alt="Mobile dropdown">
+        </a>
+    </div>
+    <div id="m-overlay" class="m-overlay">
+        <button tabindex="-1" class="m-close-btn" onclick="toggleOverlay()"><img src="images/close.png" alt="Close"></button>
+        <div class="m-overlay-content">
+            <a tabindex="-1" href="#" onclick="toggleOverlay(); document.body.focus()"><img src="images/SaccharineSweetsLogoColor.svg" alt="Logo"></a>
+            <a tabindex="-1" class="m-link f-size-32 ff-r-bold" href="index.html">Home</a>
+            <a tabindex="-1" class="m-link f-size-32 ff-r-bold" href="about.html">About</a>
+            <a tabindex="-1" class="m-link f-size-32 ff-r-bold" href="contact.html">Contact</a>
+            <a tabindex="-1" class="m-link f-size-32 ff-r-bold" href="gallery.html">Gallery</a>
+            <a tabindex="-1" class="m-link f-size-32 ff-r-bold" href="menu.html">Menu</a>
+            <a tabindex="-1" class="m-link f-size-32 ff-r-bold" href="seasonal.html">Seasonal</a>
+            <a tabindex="-1" class="m-link f-size-32 ff-r-bold" href="order.html">Order</a>
+        </div>
+    </div>
     <header>
         <nav>
-            <a href="index.html"><img src="images/SaccharineSweetsLogoColor.png" alt="Saccharine Sweets Logo"></a>
-            <div>
+            <a href="index.html"><img src="images/SaccharineSweetsLogoColor.svg" alt="Saccharine Sweets Logo"></a>
+            <div id="navbar-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
